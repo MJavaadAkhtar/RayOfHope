@@ -11,11 +11,16 @@ namespace RayOfHope
         private Animator anim;
         private int direction = 1;
         private bool isGrounded = false;
+        private ShieldMode shieldMode;
+
+        public Coroutine currentSpeedBoostCoroutine;
+
 
         void Start()
         {
             rb = GetComponent<Rigidbody2D>();
             anim = GetComponent<Animator>();
+            shieldMode = GetComponent<ShieldMode>();
         }
 
         private void Update()
@@ -88,6 +93,18 @@ namespace RayOfHope
         void ResetJump()
         {
             anim.SetBool("isJump", false);
+        }
+
+        void TakeDamage()
+        {
+            if (shieldMode != null)
+            {
+                shieldMode.TakeDamage();
+            }
+            else
+            {
+                // Normal damage logic here.
+            }
         }
     }
 }
