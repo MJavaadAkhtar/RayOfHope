@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using TMPro;
 
 namespace RayOfHope
 {
@@ -12,6 +13,12 @@ namespace RayOfHope
         private int direction = 1;
         private bool isGrounded = false;
         private ShieldMode shieldMode;
+
+        public GameObject lightOrbPrefab;
+        public Transform lightOrbStaff;
+        private int orbCount = 5;
+        public TextMeshProUGUI orbAmmoText;
+
 
         public Coroutine currentSpeedBoostCoroutine;
 
@@ -30,6 +37,11 @@ namespace RayOfHope
             if ((isGrounded && Input.GetButtonDown("Jump")) || Input.GetButton("Vertical"))
             {
                 Jump();
+            }
+
+            if (Input.GetMouseButtonDown(1) && orbCount > 0) // Right mouse button clicked
+            {
+                ShootOrb();
             }
         }
 
@@ -104,6 +116,17 @@ namespace RayOfHope
             else
             {
                 // Normal damage logic here.
+            }
+        }
+
+        void ShootOrb()
+        {
+            if(lightOrbPrefab != null && lightOrbStaff != null)
+            {
+                GameObject orb = Instantiate(lightOrbPrefab, lightOrbStaff.position, Quaternion.identity);
+                orb.GetComponent<LightOrb>().Launch(direction);
+                orbCount--;
+                orbAmmoText.text = "Orb Ammo: " + orbCount.ToString();
             }
         }
     }
