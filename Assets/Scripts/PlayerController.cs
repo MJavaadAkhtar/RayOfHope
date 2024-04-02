@@ -5,6 +5,7 @@ namespace RayOfHope
 {
     public class PlayerController : MonoBehaviour
     {
+        AudioManager audioManager;
         public float movePower = 10f;
         public float jumpPower = 15f;
 
@@ -14,6 +15,9 @@ namespace RayOfHope
         private bool isGrounded = false;
         private ShieldMode shieldMode;
 
+<<<<<<< HEAD
+        public Coroutine currentSpeedBoostCoroutine;
+=======
         public GameObject lightOrbPrefab;
         public Transform lightOrbStaff;
         private int orbCount = 5;
@@ -22,7 +26,12 @@ namespace RayOfHope
 
         public Coroutine currentSpeedBoostCoroutine;
 
+>>>>>>> 56a7a4bd90b7287c70526cbe3e4727f342d3dba4
 
+        private void Awake()
+        {
+            audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        }
         void Start()
         {
             rb = GetComponent<Rigidbody2D>();
@@ -92,10 +101,11 @@ namespace RayOfHope
             {
                 return; // Making sure Lumi can't jump while already jumping or in mid-air
             }
-
+            audioManager.PlaySFX(audioManager.jump);
             anim.SetBool("isJump", true);
             rb.velocity = Vector2.zero;
 
+            
             Vector2 jumpVelocity = new Vector2(0, jumpPower);
             rb.AddForce(jumpVelocity, ForceMode2D.Impulse);
 
@@ -117,6 +127,8 @@ namespace RayOfHope
             {
                 // Normal damage logic here.
             }
+<<<<<<< HEAD
+=======
         }
 
         void ShootOrb()
@@ -128,6 +140,7 @@ namespace RayOfHope
                 orbCount--;
                 orbAmmoText.text = "Orb Ammo: " + orbCount.ToString();
             }
+>>>>>>> 56a7a4bd90b7287c70526cbe3e4727f342d3dba4
         }
     }
 }
