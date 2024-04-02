@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class Collectible : MonoBehaviour
 {
+    AudioManager audioManager;
+
     public enum PowerUpType { Speed, Jump, LightPulse }
     public PowerUpType powerUpType;
     public float duration = 5f; // The duration for which the power-up is active
-
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
+        audioManager.PlaySFX(audioManager.collectible);
         if (other.gameObject.CompareTag("Player"))
         {
             switch (powerUpType)

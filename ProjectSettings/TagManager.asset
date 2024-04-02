@@ -5,14 +5,16 @@ TagManager:
   serializedVersion: 2
   tags:
   - Collectable
+  - Audio
+  - Boss
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
+  - Boss
   - 
   - 
   - 
@@ -39,6 +41,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 160463845
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 261388117
     locked: 0
