@@ -20,6 +20,8 @@ Features:
 - Collectables added to the game, that allows users to jump higher, run faster and use magical staff
 - Health bar and power up bar added, score system added and damage mechanism added
 - Main Menu
+- At the last level there will be a smart boss that will follow the player around and drain the players health, and the player has to avoid it
+- respawn  mechanics added 
 
 How To Install:
 Get the latest version of Unity for Windows at: https://unity.com/download

@@ -2028,8 +2028,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1047655905}
         m_TargetAssemblyTypeName: LevelMenu, Assembly-CSharp
-        m_MethodName: OpenNextLevel
-        m_Mode: 1
+        m_MethodName: OpenLevel
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

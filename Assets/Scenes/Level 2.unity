@@ -10808,8 +10808,8 @@ GameObject:
   - component: {fileID: 993724402}
   - component: {fileID: 993724405}
   - component: {fileID: 8853461538322754795}
-  - component: {fileID: 8853461538322754796}
   - component: {fileID: 8853461538322754797}
+  - component: {fileID: 8853461538322754798}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -10869,19 +10869,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightObject: {fileID: 1474345753}
---- !u!114 &8853461538322754796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8853461538322754792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fca1bf384bc12a044ab98d25289a60f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  threshold: -15
 --- !u!114 &8853461538322754797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10897,6 +10884,19 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 1881629574}
+--- !u!114 &8853461538322754798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8853461538322754792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e132cd4e9e52482690ff6209a5803f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: -15
 --- !u!114 &8914962136950248151
 MonoBehaviour:
   m_ObjectHideFlags: 0
