@@ -1,14 +1,25 @@
+Group members
+- JayaKarthiga Arumugam (jarumuga)
+- Javaad Akhtar (makhta55)
+- Eric Liu (eliu86)
+- Raj Brahmbhatt (rbrahmb2)
+
 Hi! This is the README File for my individual prototype game: Ray of Hope.
 
 I decided to go with a horizontal slice approach!
 
 Features:
--Navigating terrain
--Movement controls like Jumping and running left and right
--Path selection (to the top platform)
--Light Pulse animation on Lumi's staff
--The Darkness (limited range of visibility), low amount of global light
--Main Menu
+
+- Navigating terrain
+- Movement controls like Jumping and running left and right
+- Path selection (to the top platform)
+- Light Pulse animation on Lumi's staff
+- The Darkness (limited range of visibility), low amount of global light
+- Level selection
+- Music and Sound effects!
+- Collectables added to the game, that allows users to jump higher, run faster and use magical staff
+- Health bar and power up bar added, score system added and damage mechanism added
+- Main Menu
 
 How To Install:
 Get the latest version of Unity for Windows at: https://unity.com/download
@@ -24,8 +35,15 @@ How To Play:
 Click Let's Play on the Main Menu
 The goal of the game is to get Lumi to the top platform. 
 The controls are:
-Jump: W/Space/Up Arrow Key
-Left: A/Left Arrow Key
-Right: D/Right Arrow Key
+- Jump: W/Space/Up Arrow Key
+- Left: A/Left Arrow Key
+- Right: D/Right Arrow Key
+- Right click: Shoot orb
+
+You can also collect power ups!
+- Green diamond to gain a speed boost
+- Red diamond to gain a jump boost
+- Blue potion to gain a shield
 
 Have fun!
+
