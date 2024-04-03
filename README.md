@@ -1,3 +1,9 @@
+Group members
+- JayaKarthiga Arumugam (jarumuga)
+- Javaad Akhtar (makhta55)
+- Eric Liu (eliu86)
+- Raj Brahmbhatt (rbrahmb2)
+
 Hi! This is the README File for my individual prototype game: Ray of Hope.
 
 I decided to go with a horizontal slice approach!
@@ -39,3 +45,4 @@ You can also collect power ups!
 - Blue potion to gain a shield
 
 Have fun!
+
