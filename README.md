@@ -28,14 +28,14 @@ How To Play:
 Click Let's Play on the Main Menu
 The goal of the game is to get Lumi to the top platform. 
 The controls are:
-Jump: W/Space/Up Arrow Key
-Left: A/Left Arrow Key
-Right: D/Right Arrow Key
-Right click: Shoot orb
+- Jump: W/Space/Up Arrow Key
+- Left: A/Left Arrow Key
+- Right: D/Right Arrow Key
+- Right click: Shoot orb
 
 You can also collect power ups!
-Green diamond to gain a speed boost
-Red diamond to gain a jump boost
-Blue potion to gain a shield
+- Green diamond to gain a speed boost
+- Red diamond to gain a jump boost
+- Blue potion to gain a shield
 
 Have fun!
