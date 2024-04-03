@@ -48,11 +48,14 @@ public class Collectible : MonoBehaviour
     private IEnumerator ApplyJumpBoost(Collider2D player)
     {
         PlayerController playerMovement = player.GetComponent<PlayerController>();
+        playerMovement.Jump();
         ScoreManager.instance.AddScore(10);
+        Debug.Log("Jump boost started");
 
         playerMovement.jumpPower *= 1.5f; // Increase the jump force
         FindObjectOfType<UIController>().ActivateTimer(duration, PowerUpType.Jump);
         yield return new WaitForSeconds(duration);
+        Debug.Log("Jump boost started");
         playerMovement.jumpPower /= 1.5f; // Revert to original jump force
     }
 
