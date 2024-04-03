@@ -17,7 +17,7 @@ public class LightShieldCollectible : MonoBehaviour
             ShieldMode shieldMode = other.GetComponent<ShieldMode>();
             if (shieldMode != null)
             {
-                shieldMode.ActivateShield();
+                shieldMode.ActivateShield(other);
                 gameObject.SetActive(false); // Make the collectible disappear.
             }
         }

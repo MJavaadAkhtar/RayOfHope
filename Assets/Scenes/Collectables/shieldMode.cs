@@ -1,3 +1,4 @@
+using RayOfHope;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
@@ -6,11 +7,17 @@ public class ShieldMode : MonoBehaviour
     private bool isShieldActive = false;
     public Light2D lightObject;
 
-    public void ActivateShield()
+    public void ActivateShield(Collider2D player)
     {
         isShieldActive = true;
         lightObject.falloffIntensity = 0.1f;
         lightObject.intensity = 1f;
+        PlayerController playerMovement = player.GetComponent<PlayerController>();
+
+        var oldJump = playerMovement.jumpPower;
+        playerMovement.jumpPower = 8f;
+        playerMovement.Jump();
+        playerMovement.jumpPower = oldJump;
 
     }
 
