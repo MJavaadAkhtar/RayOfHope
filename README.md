@@ -3,14 +3,15 @@ Hi! This is the README File for my individual prototype game: Ray of Hope.
 I decided to go with a horizontal slice approach!
 
 Features:
--Navigating terrain
--Movement controls like Jumping and running left and right
--Path selection (to the top platform)
--Light Pulse animation on Lumi's staff
--The Darkness (limited range of visibility), low amount of global light
+
+- Navigating terrain
+- Movement controls like Jumping and running left and right
+- Path selection (to the top platform)
+- Light Pulse animation on Lumi's staff
+- The Darkness (limited range of visibility), low amount of global light
 - Level selection
 - Music and Sound effects!
--Main Menu
+- Main Menu
 
 How To Install:
 Get the latest version of Unity for Windows at: https://unity.com/download
