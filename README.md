@@ -8,6 +8,8 @@ Features:
 -Path selection (to the top platform)
 -Light Pulse animation on Lumi's staff
 -The Darkness (limited range of visibility), low amount of global light
+- Level selection
+- Music and Sound effects!
 -Main Menu
 
 How To Install:
@@ -27,5 +29,11 @@ The controls are:
 Jump: W/Space/Up Arrow Key
 Left: A/Left Arrow Key
 Right: D/Right Arrow Key
+Right click: Shoot orb
+
+You can also collect power ups!
+Green diamond to gain a speed boost
+Red diamond to gain a jump boost
+Blue potion to gain a shield
 
 Have fun!
