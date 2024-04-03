@@ -18,6 +18,7 @@ Features:
 - Level selection
 - Music and Sound effects!
 - Collectables added to the game, that allows users to jump higher, run faster and use magical staff
+- Health bar and power up bar added, score system added and damage mechanism added
 - Main Menu
 
 How To Install:
