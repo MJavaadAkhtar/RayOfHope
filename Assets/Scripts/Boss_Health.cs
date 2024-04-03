@@ -1,0 +1,40 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BossHealth : MonoBehaviour
+{
+	[SerializeField]
+	private GameObject WinPanel;
+
+
+	public int health = 500;
+
+	public GameObject deathEffect;
+
+	public bool isInvulnerable = false;
+	public void ShowWinPannel()
+	{
+		WinPanel.SetActive(true);
+	}
+	public void TakeDamage(int damage)
+	{
+		if (isInvulnerable)
+			return;
+
+		health -= damage;
+
+		if (health <= 0)
+		{
+			Die();
+		}
+	}
+
+	void Die()
+	{
+		Instantiate(deathEffect, transform.position, Quaternion.identity);
+		Destroy(gameObject);
+		ShowWinPannel();
+	}
+
+}
