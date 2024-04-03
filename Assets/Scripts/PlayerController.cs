@@ -90,7 +90,7 @@ namespace RayOfHope
             }
         }
 
-        void Jump()
+        public void Jump()
         {
             if (!isGrounded || anim.GetBool("isJump"))
             {
@@ -106,7 +106,7 @@ namespace RayOfHope
             Invoke("ResetJump", 0.2f); // Delay to prevent rapid consecutive jumps
         }
 
-        void ResetJump()
+        public void ResetJump()
         {
             anim.SetBool("isJump", false);
         }
