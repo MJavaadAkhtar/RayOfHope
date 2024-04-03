@@ -11,6 +11,7 @@ Features:
 - The Darkness (limited range of visibility), low amount of global light
 - Level selection
 - Music and Sound effects!
+- Collectables added to the game, that allows users to jump higher, run faster and use magical staff
 - Main Menu
 
 How To Install:
