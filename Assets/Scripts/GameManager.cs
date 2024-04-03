@@ -10,6 +10,9 @@ namespace RayOfHope
         private GameObject WinPanel;
         [SerializeField]
         private GameObject Player;
+        [SerializeField]
+
+        private GameObject HealthBar;
         public void OnPlayBehaviour(int SceneIndex)
         {
             SceneManager.LoadScene(SceneIndex);
@@ -18,6 +21,13 @@ namespace RayOfHope
         public void ShowWinPannel()
         {
             WinPanel.SetActive(true);
+        }
+        
+
+        public void OnPlayNextLevel(int nextLevelIndex)
+        {
+            // Load the next level
+            SceneManager.LoadScene(nextLevelIndex);
         }
         private void OnTriggerEnter2D(Collider2D collision)
         {
